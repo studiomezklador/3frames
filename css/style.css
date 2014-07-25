@@ -1,5 +1,21 @@
+/*
+BS3 SPECIFICS
+*/
+.jumbotron {
+    background: #afe0ea; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #afe0ea 0%, #0d1133 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#afe0ea), color-stop(100%,#0d1133)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(45deg,  #afe0ea 0%,#0d1133 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(45deg,  #afe0ea 0%,#0d1133 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(45deg,  #afe0ea 0%,#0d1133 100%); /* IE10+ */
+    background: linear-gradient(45deg,  #afe0ea 0%,#0d1133 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#afe0ea', endColorstr='#0d1133',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
 .row {position: relative; width:100%;margin:0; padding:0;overflow: hidden;height: 300px;}
 
+/*
+ACCORDION
+*/
 ul.accordion{
     list-style:none;
     position:absolute;
@@ -104,6 +120,10 @@ ul.accordion li .description a:hover{
     display:none;
 }*/
 
+
+/*
+FEW TWEAKS
+*/
 li.frame {margin: 0; padding: 0;}
 
 .red {color: #E40037!important;}
