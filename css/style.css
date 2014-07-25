@@ -9,36 +9,41 @@ ul.accordion{
     font-style: italic;
     line-height: 1.5em;
     width: 100%;
+    margin:0;
+    padding: 0;
 }
 
 ul.accordion li{
-    float:right;
+    float:left;
     width:33.33%;
     height:300px;
     display:block;
-    border-right:2px solid #fff;
-    border-bottom:2px solid #fff;
+/*    border-right:1px solid #fff;
+    border-left:1px solid #fff;*/
+/*    border-bottom:2px solid #fff;*/
     background-color:#fff;
     background-repeat:no-repeat;
     background-position:center center;
     position:relative;
     overflow:hidden;
     cursor:pointer;
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+        box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
 ul.accordion li .heading{
     background-color:#fff;
     padding:10px;
-    margin-top:60px;
+/*    margin-top:60px;*/
     opacity:0.9;
     text-transform:uppercase;
-    font-style:normal;
     font-weight:bold;
     letter-spacing:1px;
-    font-size:14px;
+    font-size:18px;
     color:#444;
     text-align:center;
-    text-shadow:-1px -1px 1px #ccc;
+    font-style:normal;
 }
 
 ul.accordion li .description{
@@ -48,6 +53,8 @@ ul.accordion li .description{
     bottom:0px;
     left:0px;
     display:none;
+    background-color: rgba(255,255,255,.5);
+    height:100%;
 }
 
 ul.accordion li .description h2{
@@ -59,12 +66,10 @@ ul.accordion li .description h2{
     color:#444;
     text-align:left;
     margin:0px 0px 15px 20px;
-    text-shadow:-1px -1px 1px #ccc;
 }
 ul.accordion li .description p{
     line-height:14px;
     margin:10px 22px;
-    font-family: "Trebuchet MS", sans-serif;
     font-size: 12px;
     font-style: italic;
     font-weight: normal;
@@ -78,21 +83,25 @@ ul.accordion li .description a{
     left:20px;
     text-transform:uppercase;
     font-style:normal;
-    font-size:11px;
+    font-size:16px;
     text-decoration:none;
-    color:#888;
+    color:#000;
+    padding:3px;
 }
 ul.accordion li .description a:hover{
-    color:#333;
-    text-decoration:underline;
+    color:#FFF;
+    background: #000;
+    text-decoration:none;
 }
 
-ul.accordion li .bgDescription{
-    background:transparent url(images/bgDescription.png) repeat-x top left;
+/*ul.accordion li .bgDescription{
+    background:transparent url(../images/bgDescription.png) repeat-x top left;
     height:340px;
     position:absolute;
     bottom:0px;
     left:0px;
     width:100%;
     display:none;
-}
+}*/
+
+li.frame {margin: 0; padding: 0;}
